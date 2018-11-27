@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Firebase Chat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Anytime is Train Time</h1>
+                <p class="lead">Add the train and keep track of it's arrival times</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                Current Train Schedule
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Train Name</th>
+                                <th scope="col">Destination</th>
+                                <th scope="col">Frequency (mins)</th>
+                                <th scope="col">Next Arrival</th>
+                                <th scope="col">Minutes Away</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+
+                </blockquote>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                Add Train
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <form>
+                        <div class="form-group">
+                            <label for="nameOfTrain">Train Name</label>
+                            <input type="text" class="form-control" id="nameInput" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="nameOfDestination">Destination</label>
+                            <input type="text" class="form-control" id="destinationInput" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="timeOfTrain">First Train Time (HH:mm military time)</label>
+                            <input type="text" class="form-control" id="timeInput" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="arrivalFrequency">Frequency (min)</label>
+                            <input type="text" class="form-control" id="frequencyInput" placeholder="">
+                        </div>
+                        <button type="submit" class="submitButton">Submit</button>
+                    </form>
+
+                </blockquote>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+    <script>
+
+        // Fill in this config file with the settings provided to you by Firebase
+        var config = {
+            apiKey: "AIzaSyAsweIWgRjUgFoHDdwwDwCL1qyPaKSzu84",
+            authDomain: "trainactivity-430a0.firebaseapp.com",
+            databaseURL: "https://trainactivity-430a0.firebaseio.com",
+            projectId: "trainactivity-430a0",
+            storageBucket: "trainactivity-430a0.appspot.com",
+            messagingSenderId: "93359047242"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(config);
+    </script>
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
