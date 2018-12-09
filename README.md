@@ -6,7 +6,7 @@
 an updatable train schedule with a working clock and calculations for arrival times.
 format is able to retain integrity at any size screen.
 
-![Game Image](assets/images/BigCityRailway.png)
+![Game Image](https://github.com/MDTrue/Train-Activity/blob/master/assets/images/BigCityRailway.PNG)
 
 ---
 
